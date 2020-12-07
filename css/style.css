@@ -27,6 +27,24 @@
 ссылки #FFFFFF 60% = rgba(255,255,255,0.6)
 */
 
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -47,6 +65,10 @@ body {
     
 }
 
+.page-header {
+    display: flexbox;
+    justify-content: center;
+}
 .logo {
     font-family: 'Raleway', 'EB Garamond', 'Libre Baskerville', serif;
     font-weight: 700;
@@ -67,11 +89,45 @@ body {
     color: var(--primary-white-color);
  }
 
-ul { list-style: none; }
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
 a { text-decoration: none; } 
 
 /* Site nav */
+
+.page-header {
+    width: 1600px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: baseline;    
+    margin-left: 215px;
+    margin-right: 215px;    
+}
+
+.site-nav {
+    display: flex; 
+    margin-left: 93px;
+
+}
+
+.site-nav .item + .item {    
+    margin-left: 50px;
+}
+
+.auth-nav {
+    display: flex;  
+    margin-left: auto;   
+}
+
+.auth-nav .item + .item {    
+    margin-left: 50px;
+}
 
 .list{
     font-weight: 500;
@@ -81,6 +137,10 @@ a { text-decoration: none; }
 }
 
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
 }
 
@@ -114,12 +174,31 @@ a { text-decoration: none; }
     color: var(--primary-white-color); 
 }
 
-.hero {
+.hero {    
+    width: 1600px;
+    height: 600;
+    
+    display: box;
+    justify-content: center;
+
     background-color: var(--primary-black-color);
+}
+
+.section .hero {
+    display: box;
+
 }
 
 /*Button*/
 
+.button {
+    display: flexbox;
+    justify-content: center;
+    padding: 20px 40px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+}
 
 .hero .button,
 .hero > span {
@@ -131,16 +210,50 @@ a { text-decoration: none; }
     letter-spacing: 0.06em; 
     color: var(--primary-white-color);
     background-color: var(--blue-color);
+
+    display: flexbox;
+    justify-content: center;
+    padding: 10px 32px;
+    border-radius: 4px;
+    
        
 }
+
 
 .hero .button:hover,
 .hero .button:focus {
     color: var(--title-text-color);
     background-color: var(--secondary--white-color);
+
+    display: flexbox;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 4px;
 }
 
 /* Features */
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1600px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.features .card {
+    width:270px;
+    height: 101px;
+}
+
+.features .card + .card {
+    margin-left: 30px;
+}
+
+.features .title {
+    margin-bottom: 10px;
+}
 
 .feature-list .title {
     font-weight: 700;
@@ -230,6 +343,12 @@ section .card {
  .site-buttons .button:focus {
     color: var(--primary-white-color);
     background-color: var(--blue-color);
+    
+}
+.site-buttons {
+    display: flex;
+    align-items: center;
+    padding: 6px 22px;
 }
 
 /* Портфолио */
