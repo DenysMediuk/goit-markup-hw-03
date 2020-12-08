@@ -29,6 +29,8 @@
 
 html {
     box-sizing: border-box;
+   margin:0:
+    padding: 0;
 }
 *,
 *::before,
@@ -40,7 +42,10 @@ h1,
 h2,
 h3,
 p,
-li {
+ul,
+li,
+img,
+a {
     margin: 0;
     padding: 0;
 }
@@ -57,6 +62,8 @@ li {
 }
 
 body {
+    width: 1600px;
+
     font-family: 'Roboto', 'Roboto Condensed', 'Merriweather Sans', 'Arial', 'Helvetica', 'Tahoma', sans-serif;
     font-weight: normal;
     letter-spacing: 0.03em;
@@ -165,6 +172,7 @@ a { text-decoration: none; }
 /* Hero */
 
 .hero-title {
+    display: block;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -174,26 +182,27 @@ a { text-decoration: none; }
     color: var(--primary-white-color); 
 }
 
-.hero {    
-    width: 1600px;
-    height: 600;
-    
+.hero {  
+  
     display: box;
     justify-content: center;
+    width: 1600px;
+    height: 900px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     background-color: var(--primary-black-color);
 }
 
-.section .hero {
-    display: box;
 
-}
 
 /*Button*/
 
 .button {
     display: flexbox;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 40px;
     width: 200px;
     height: 50px;
@@ -275,17 +284,85 @@ a { text-decoration: none; }
 }
 
 /* Чем мы занимаемcя */
-.section-title {
+
+.section .progects {
+    display: box;
+
+}
+
+.progects .section-title {    
+    
+    margin-bottom: 50px;   
+    text-align: center;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.166666666;
-    text-align: center;
+    
     color: var(--title-text-color);
+}
+
+.progects-pictures {
+    display: flex;
+    justify-content: center;
+}
+
+.progects-pictures li + li {
+    margin-left: 30px;
+}
+
+.section.progects {
+    margin-bottom: 94px;   
+
 }
 
 /* Team */
 
+.section.team {
+    display: block; 
+    justify-content: center;   
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team .section-title {
+    display: block;
+    
+    text-align: center; 
+    width: 270px;   
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166666666;
+    
+    color: var(--title-text-color);
+}
+
+.team-cards li {
+    display: block;
+    width: 270px;  
+    text-align: center;
+
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.team-cards li + li {
+    margin-left: 30px;
+}
+.team-cards img {
+    padding-bottom: 0px;
+}
+
 .card .name{
+    
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1875;
@@ -301,16 +378,42 @@ section.team {
 }
 
 section .card {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--primary-white-color);
 }
 
 /* Footer */
 
-.footer {
+.page-footer {
+    height: 252px;
+}
+ 
+.page-footer .logo {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer {    
+    margin-bottom: 60px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7143;
 }
+
+.footer li + li {
+    display: block;
+    margin-top: 9px;
+}
+
+.page-footer .logo,
+.page-footer .footer {
+    margin-left: 215px;
+ 
+ }
+ 
+ 
 .footer .address-link {
     color: var(--primary-white-color);
 }
@@ -353,16 +456,56 @@ section .card {
 
 /* Портфолио */
 
+/*Buttons*/
+.site-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.site-buttons li + li {
+    margin-left: 30px;
+}
+
+
+/*Portfolio*/
+
+.section .portfolio {
+    display: box;
+    
+    width: 1170px;
+    /*height: 1360px;*/
+    
+}
+
+
 .section-title-progects {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
     color: var(--title-text-color);
      
 }
 
 .section-progects-content{
+    text-align: center;
     font-size: 16px;
     line-height: 1.875;
+}
+
+.portfolio ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1170px;
+}
+
+.portfolio li + li {
+    margin-left: 30px;
 }
