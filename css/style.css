@@ -197,22 +197,28 @@ a { text-decoration: none; }
 
 
 /*Button*/
-
-.button {
-    display: flexbox;
+/*
+.hero-button {
+    display: box;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 40px;
+    padding: 10px 32px;
+    
     width: 200px;
     height: 50px;
+    
     border-radius: 4px;
-}
+}*/
 
-.hero .button,
-.hero > span {
+.hero-button {
+    display: box;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     font-family: inherit;
     font-style: normal;
+    text-align: center;     
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -229,14 +235,14 @@ a { text-decoration: none; }
 }
 
 
-.hero .button:hover,
-.hero .button:focus {
-    color: var(--title-text-color);
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--blue-color);
     background-color: var(--secondary--white-color);
 
     display: flexbox;
     justify-content: center;
-    padding: 20px 40px;
+    padding: 10px 32px;
     border-radius: 4px;
 }
 
