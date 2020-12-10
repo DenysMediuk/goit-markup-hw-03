@@ -29,7 +29,7 @@
 
 html {
     box-sizing: border-box;
-   margin:0:
+    margin:0;
     padding: 0;
 }
 *,
@@ -173,6 +173,7 @@ a { text-decoration: none; }
 
 .hero-title {
     display: block;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -184,12 +185,12 @@ a { text-decoration: none; }
 
 .hero {  
   
-    display: box;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 1600px;
     height: 900px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
 
     background-color: var(--primary-black-color);
 }
@@ -226,8 +227,7 @@ a { text-decoration: none; }
     color: var(--primary-white-color);
     background-color: var(--blue-color);
 
-    display: flexbox;
-    justify-content: center;
+    
     padding: 10px 32px;
     border-radius: 4px;
     
@@ -432,8 +432,26 @@ section .card {
 }
 
 /* Page-2*/
-
+.section-portfolio {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+/*Header*/
+.page-header .portfolio{
+    border-bottom: 1px solid  #ECECEC;
+}
 /* Чем мы занимаемcя */
+.section.portfolio {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1170px;
+    align-items: center;
+    /*height: 1360px;*/
+    
+}
  
 .site-buttons .site-button,
 .site-buttons > span {
@@ -467,6 +485,7 @@ section .card {
 
 /*Buttons*/
 .site-buttons {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     margin-top: 94px;
@@ -480,13 +499,7 @@ section .card {
 
 /*Portfolio*/
 
-.section .portfolio {
-    display: box;
-    
-    width: 1170px;
-    /*height: 1360px;*/
-    
-}
+
 
 
 .section-title-progects {
@@ -504,6 +517,7 @@ section .card {
 
 .section-progects-content{
     text-align: center;
+    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.875;
 }
