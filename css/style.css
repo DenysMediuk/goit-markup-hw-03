@@ -29,8 +29,10 @@
 
 html {
     box-sizing: border-box;
+    width: 1600px;
     margin:0;
     padding: 0;
+    background-color: var(--third-white-color);
 }
 *,
 *::before,
@@ -438,7 +440,7 @@ section .card {
     justify-content: center;
 }
 /*Header*/
-.page-header .portfolio{
+.page-header.portfolio{
     border-bottom: 1px solid  #ECECEC;
 }
 /* Чем мы занимаемcя */
