@@ -29,11 +29,16 @@
 
 html {
     box-sizing: border-box;
-    width: 1600px;
+    
     margin:0;
     padding: 0;
     background-color: var(--third-white-color);
 }
+.page {
+    width: 1600px;
+    background-color: var(--primary-white-color);
+}
+
 *,
 *::before,
 *::after {
@@ -64,15 +69,14 @@ a {
 }
 
 body {
-    width: 1600px;
-
-    font-family: 'Roboto', 'Roboto Condensed', 'Merriweather Sans', 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+    margin: 0;
     font-weight: normal;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
+    
     
 }
+
 
 .page-header {
     display: flexbox;
@@ -114,9 +118,9 @@ a { text-decoration: none; }
 
 .main-nav {
     display: flex;
-    align-items: baseline;    
+    align-items: baseline; /*   
     margin-left: 215px;
-    margin-right: 215px;    
+    margin-right: 215px;   */ 
 }
 
 .site-nav {
@@ -171,6 +175,21 @@ a { text-decoration: none; }
     color: var(--blue-color);
 }
 
+/*Container*/
+.container {
+    
+    justify-content: center;
+    align-items: baseline;
+      
+    margin-left: 215px;
+    margin-right: 215px; 
+    /*
+    outline: 1px solid black;
+    */
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* Hero */
 
 .hero-title {
@@ -249,14 +268,16 @@ a { text-decoration: none; }
 }
 
 /* Features */
-.feature-list {
+.container .feature-list {
     display: flex;
     flex-wrap: wrap;
     width: 1600px;
     margin-top: 94px;
     margin-bottom: 94px;
+    /*
     margin-left: 215px;
     margin-right: 215px;
+    */
 }
 
 .features .card {
@@ -387,7 +408,7 @@ section.team {
 
 section .card {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;    
     background-color: var(--primary-white-color);
 }
 
@@ -399,7 +420,7 @@ section .card {
  
 .page-footer .logo {
     display: block;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 20px;
 }
 
@@ -414,13 +435,13 @@ section .card {
     display: block;
     margin-top: 9px;
 }
-
+/*
 .page-footer .logo,
 .page-footer .footer {
     margin-left: 215px;
  
  }
- 
+ */
  
 .footer .address-link {
     color: var(--primary-white-color);
@@ -435,8 +456,7 @@ section .card {
 
 /* Page-2*/
 .section-portfolio {
-    box-sizing: border-box;
-    display: flex;
+    display: block;
     justify-content: center;
 }
 /*Header*/
@@ -487,7 +507,6 @@ section .card {
 
 /*Buttons*/
 .site-buttons {
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     margin-top: 94px;
