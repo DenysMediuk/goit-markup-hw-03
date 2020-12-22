@@ -34,16 +34,7 @@ html {
     padding: 0;
     background-color: var(--third-white-color);
 }
-.page {
-    width: 1600px;
-    background-color: var(--primary-white-color);
-}
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
 
 h1,
 h2,
@@ -75,6 +66,14 @@ body {
     color: var(--primary-text-color);
     
     
+}
+
+.page {
+    display:box;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -112,8 +111,10 @@ a { text-decoration: none; }
 
 /* Site nav */
 
-.page-header {
-    width: 1600px;
+.nav {
+    display: flex;
+    align-items: baseline; 
+   
 }
 
 .main-nav {
@@ -177,12 +178,9 @@ a { text-decoration: none; }
 
 /*Container*/
 .container {
+
+    margin: 0 auto;
     
-    justify-content: center;
-    align-items: baseline;
-      
-    margin-left: 215px;
-    margin-right: 215px; 
     /*
     outline: 1px solid black;
     */
@@ -194,6 +192,8 @@ a { text-decoration: none; }
 
 .hero-title {
     display: block;
+    padding: 200px auto;
+
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -204,15 +204,10 @@ a { text-decoration: none; }
     color: var(--primary-white-color); 
 }
 
-.hero {  
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1600px;
-    height: 900px;
-    
-
+.hero { 
+    display: block;
+    text-align: center;
+    padding: 200px;
     background-color: var(--primary-black-color);
 }
 
@@ -234,10 +229,12 @@ a { text-decoration: none; }
 }*/
 
 .hero-button {
+    /*
     display: box;
     justify-content: center;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
+    
     font-family: inherit;
     font-style: normal;
     text-align: center;     
@@ -261,7 +258,7 @@ a { text-decoration: none; }
     color: var(--blue-color);
     background-color: var(--secondary--white-color);
 
-    display: flexbox;
+    display: box;
     justify-content: center;
     padding: 10px 32px;
     border-radius: 4px;
@@ -270,8 +267,7 @@ a { text-decoration: none; }
 /* Features */
 .container .feature-list {
     display: flex;
-    flex-wrap: wrap;
-    width: 1600px;
+    flex-wrap: wrap;    
     margin-top: 94px;
     margin-bottom: 94px;
     /*
